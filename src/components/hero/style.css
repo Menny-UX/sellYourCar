@@ -1,0 +1,26 @@
+.hero-section{
+    position: relative;
+    height: 76vh;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: var(--space-m);
+    color: white;
+    padding: 0 var(--space-l);
+    z-index: 10;
+    background: linear-gradient(180deg, #323E471A 0%, #000000 100%),
+                url(/src/assets/images/Header_bg.png) center center no-repeat;
+
+    background-size: cover;
+}
+.hero-content{
+    margin-bottom: -2rem;
+}
+.hero-text{
+    margin: 1.2rem 0rem 0rem;
+}
+.start-btn{
+    margin-top: var(--space-m) !important;
+}
+.start-btn:hover{
+    color: white;
+}

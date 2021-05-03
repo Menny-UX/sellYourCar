@@ -1,0 +1,76 @@
+.form-container{
+    padding: 0rem var(--space-m) 0;
+}
+
+.form-subsec{
+    color: var(--text-dark-gray);
+    margin: 0 0 2.4rem; 
+}
+.form-container .formControl{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 9.5rem;
+}
+.form-container .formControl label{
+    color: var(--text-dark-gray);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.form-container .formControl select:hover,
+.form-container .formControl input:hover{
+    cursor: pointer;
+}
+.form-container .formControl select,
+.form-container .formControl input{
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    border: var(--text-light-gray) solid 1px;
+}
+
+.form-container .formControl select:focus,
+.form-container .formControl input:focus{
+    border: transparent solid 2px;
+    box-shadow: 0px 0px 20px #0000001A;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.form-container .formControl select.invalid:focus,
+.form-container .formControl select.invalid,
+.form-container .formControl input.invalid:focus,
+.form-container .formControl input.invalid{
+    border: var(--primary-color) solid 2px;
+}
+.global-error{
+    background-color: var(--primary-color);
+    padding: 1.1rem 3rem;
+    color: var(--text-light);
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 0.8rem;
+}
+.field-error{
+    margin: -.4rem 0 1rem;
+    text-align: end;
+    padding: .5rem 0;
+    padding-inline-end: .6rem;
+    background-color: var(--primary-color);
+    border-radius: 2px 2px .5rem .5rem;
+    color: var(--text-light);
+    font-size: 1.4rem;
+}
+.form-container .form-btn{
+    margin: 1.2rem 0 3rem;
+}
+/* Mobile */
+@media (max-width: 800px) {
+    .form-container{
+        padding: 6rem 10rem;
+    }
+}
+@media (max-width: 440px) {
+    .form-container{
+        padding: 6rem 4rem;
+    }
+}

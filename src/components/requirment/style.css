@@ -1,0 +1,50 @@
+.section-requirment{
+    padding: var(--space-m) 0;
+}
+.requirments-list{
+    padding: 6rem var(--space-xl);
+    column-count: 2;
+    column-gap: 6rem;
+}
+
+.requirments-list li::marker{
+   color: var(--primary-color);
+   font-size: 2.6rem;
+}
+.requirments-list li{
+    color: var(--text-dark-gray);
+    letter-spacing: -0.5px;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.required-docs{
+    width: 100%;
+    background-color: var(--bg-light);
+    padding: 2rem var(--space-xl);
+}
+.doc-item{
+    flex: 1;
+    color: var(--text-dark-gray);
+    text-align: center;
+    margin: 3rem 0rem 6rem;
+}
+.doc-item p,
+.doc-item h3{
+   margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+    .requirments-list{
+        column-count: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .required-docs {
+        padding: 1rem 3rem;
+    }
+    .section-requirment {
+        padding: 0;
+    }
+}

@@ -4,9 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+import "./i18n";
+
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#EC1C24',
+    },
+  },
+});
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+        <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

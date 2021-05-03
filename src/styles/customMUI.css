@@ -1,0 +1,6 @@
+.MuiSvgIcon-fontSizeLarge{
+    font-size: 2.6rem !important;
+}
+button .MuiSvgIcon-fontSizeLarge{
+    margin-inline-start: .4rem !important;
+}

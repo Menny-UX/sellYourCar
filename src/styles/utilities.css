@@ -1,0 +1,57 @@
+.section-title{
+    font-size: 3.5rem;
+    margin: 0;
+    letter-spacing: -0.95px;
+    font-weight: 500;
+}
+.section-subTitle{
+    margin: 1rem 0 6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+.x-align{
+    display: flex;
+    width: 100%;
+}
+.y-align{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.contain-img{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+.prefix-before{
+    position: relative;
+}
+.prefix-before:before{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.prefix{
+    position: relative;
+}
+.prefix:before,
+.prefix:after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}

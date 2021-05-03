@@ -1,0 +1,51 @@
+.section-start{
+    width: 100%;
+    padding: 0 var(--space-l);
+}
+.start-header{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--space-m);
+}
+.start-desc{
+    width:50%;
+
+}
+.video-draft{
+    height: 25rem;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+}
+.video-prompt{
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin: 4rem 0 0;
+}
+.video-text{
+    color: var(--text-dark-gray);
+    font-size:1.8rem;
+    font-weight: 500; 
+    margin: 1rem 0 0;
+}
+.video-subText{
+    color: var(--text-dark-gray);
+}
+.start-Form{
+    width: 50%;
+}
+@media (max-width:800px){
+    .start-content{
+        flex-direction: column;
+    }
+    .start-desc {
+        width: 100%;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .start-Form {
+        width: 100%;
+    }
+}

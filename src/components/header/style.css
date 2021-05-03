@@ -1,0 +1,12 @@
+.layout-header{
+    justify-content: space-between !important;
+    padding: 0 var(--space-l);
+    background-color: var(--bg-main);
+    position: fixed;
+    height: 7rem;
+    z-index: 100;
+}
+
+.header-logo{
+    padding: 1.4rem 0;
+}

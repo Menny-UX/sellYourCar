@@ -1,0 +1,82 @@
+.layout-footer{
+    background-color: var(--bg-main);
+    z-index: 10;
+    padding: 2rem var(--space-xl);
+    align-items: flex-start;
+}
+
+.brand-side{
+    flex:1;
+    align-items: baseline;
+    padding-inline-end: 4rem;
+}
+.layout-footer .footer-logo{
+    margin: 1rem 0 2rem;
+    height: 7rem;
+}
+.layout-footer .brand-slogen{
+    font-size: 1.3rem;
+    color: var(--text-dark-gray);
+}
+.socialMedia-side{
+    flex:1;
+    padding-inline-start: 6rem;
+}
+.socialMedia-side h3{
+    letter-spacing: -0.45px;
+    width: 74%;
+    margin: 1rem 0 0.6rem;
+}
+
+.socialMedia-side .social-btn{
+    border-radius: 10rem !important;
+    padding: 0rem !important;
+    width: 1.4rem;
+    transform: scale(.78);
+}
+
+.socialMedia-side .social-btn img{
+    height: 2rem;
+    width: 26rem;
+    object-fit: contain;
+    object-position: center;
+    margin: 2rem 0;
+}
+
+@media (max-width: 1200px) {
+    .socialMedia-side .social-btn{
+        min-width: 6rem;
+    }
+}
+@media (max-width: 1024px) {
+    .layout-footer{
+        padding: 1rem 12rem;
+    }
+}
+@media (max-width: 800px) {
+    .layout-footer {
+        padding: 1rem 12rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .y-align.brand-side {
+        align-items: center;
+        padding-inline-end: unset;
+        width: 100%;
+    }
+    .layout-footer .brand-slogen {
+        text-align: center;
+        margin: 1rem 2rem;
+    }
+    .y-align.socialMedia-side{
+        padding-inline-start: unset;
+        align-items: center;
+    }
+    .socialMedia-side h3 {
+        text-align: center;
+    }
+    .x-align.social-list {
+        justify-content: center;
+    }
+}
