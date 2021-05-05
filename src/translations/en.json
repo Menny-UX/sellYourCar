@@ -1,5 +1,67 @@
 {
     "Hero-title":"Selling Your Car Now",
     "Hero-subTitle" : "Is Easier than ever.",
-    "Hero-btn" : "Start Today"
+    "Hero-btn" : "Start Today",
+
+    "Process-title": "How it works?",
+    "Process-subTitle": "Sell Your Car in Three Simple Steps",
+    "Process-item01-brief": "Submit Your Car",
+    "Process-item01-desc": "Enter your car details for inspection on Emirates Auction.",
+    "Process-item02-brief": "Receive Valuation and Offer",
+    "Process-item02-desc": "We will check your car and provide you with approved purchase price.",
+    "Process-item03-brief": "Get Your Payment",
+    "Process-item03-desc": "After a price is agreed for your car, we will exchange cash on a day that suits you.",
+    "bidding-title": "Your car will be sold by bidding",
+    "bidding-subTitle": "You set the starting price it will be sold for the highest bidder",
+
+    "start-title": "Start today!",
+    "start-subTitle": "You are just one click away from selling your car.",
+    "video-prompt": "Why you should sell your car with us?",
+    "video-text01": "We support you from start to finish",
+    "video-text02": "We have streamlined the process to sell your car online for quick payment to get your free cash offer.",
+    "video-text03": "Ready to sell your car?",
+
+    "form-subTitle01": "Enter your car details",
+    "form-label01": "Car Make",
+    "form-label02": "Car Model",
+    "form-subTitle02": "Enter your Contact Info",
+    "form-label03": "Your Full Name",
+    "form-label04": "Your Phone Number",
+    "form-btn": "Send Your Inquiry",
+
+    "form-validate-global": "* All fields are required to be filled",
+    "form-validate-input01": "Please select the car's maker!",
+    "form-validate-input02": "Please select the car's model!",
+    "form-validate-input03": "Please enter your full name!",
+    "form-validate-input04-01": "Only number are allowed!",
+    "form-validate-input04-02": "Please enter your phone number!",
+
+    "service-title": "Why use our services?",
+    "service-subTitle": "We operates 24 hour/7 day-a-week telephone, email & remote support services that is staffed to handle any issue or question",
+    "service01-title": "Easy Process",
+    "service01-text": "We help you save time and effort. We master how to sell a car privately and have simplified the process of selling a vehicle to make it hassle-free.",
+    "service02-title": "Get The Best Return",
+    "service02-text": "Get the most money for your car. Reach serious buyers. Avoid lowball offers. Use our valuation tools for a better price when selling your car.",
+    "service03-title": "Dedicated Team",
+    "service03-text": "Our seller experts are here to help you at every step of the way via email, phone, or chat all the week days! They help you find real buyers for your car and finalize your deal fast.",
+
+    "requirment-title": "Get prepared before our call",
+    "requirment-subTitle": "Required Documents & Procedures",
+    "requirment-01": "The car must be brought in good working condition",
+    "requirment-02": "In case the chassis is not OK, we'll do a registration test (AED 170 is the cost).",
+    "requirment-03": "The commission is 5% for GCC cars and 7% for imported cars (minimum commission 1000 AED).",
+    "requirment-04": "If the item is sold, the check will be deposit in your bank account after 10 working days from the time of auction’s conclusion",
+    "requirment-05": "If the car is sold for less than AED 5,000, the company commission is only AED 500.",
+    "requirment-06": "For the classic cars, trucks and heavy equipment, you must bring export test only and the commission is 7% (minimum commission 1000 AED).",
+    "requirment-07": "For the equipment (generator, scissor lift, electric forklift ..... etc) Tax invoice is required.",
+    "requirment-08": "We'll do a comprehensive test (AED 300 is the cost).",
+
+    "required-documents-title": "Required Documentation",
+    "required-documents-01": "Emirates ID",
+    "required-documents-02": "Possession certificate",
+    "required-documents-02-detail": "(Dubai certificate or transfer to Dubai)",
+    "required-documents-03": "Bank account details",
+
+    "footer-slogan": "Buy new and used cars in UAE, shipping and delivery service are available, Sell your car at the highest price online with no worries visiting cars show rooms.",
+    "footer-social": "Follow the first and the largest online auction in UAE and Middle East"
 }

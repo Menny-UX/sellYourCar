@@ -65,3 +65,8 @@
         margin-bottom: 3rem;
     }
 }
+@media (max-width: 440px) {
+    .service-section {
+        padding: 6rem 3rem;
+    }
+}

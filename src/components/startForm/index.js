@@ -1,13 +1,16 @@
-import React, { useState , useEffect} from 'react';
-import './style.css';
+import React, { useState , useEffect} from 'react'
+import './style.css'
 
-import { Button } from '@material-ui/core';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import { Button } from '@material-ui/core'
+import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 
-import { useFormik, } from "formik";
-import * as Yup from "yup";
+import { useFormik, } from "formik"
+import * as Yup from "yup"
+
+import { useTranslation } from 'react-i18next'
 
 const Form = () => {
+    const { t, i18n } = useTranslation();
     const [globalError, setGlobalError] = useState(false);
 
     const handleglobalError = ()=>{
@@ -30,18 +33,15 @@ const Form = () => {
         },
         validationSchema: Yup.object({
             car_make: Yup.string()
-            .required("Please select the car's maker!"),
+            .required(t('form-validate-input01')),
             car_model: Yup.string()
-            .required("Please select the car's model!"),
+            .required(t('form-validate-input02')),
             name: Yup.string()
-            .required("Please enter your full name!"),
+            .required(t('form-validate-input03')),
             phone: Yup
-            .number("Only number are allowed !")
-            .required("Please enter your phone number!"),
+            .number(t('form-validate-input04-01'))
+            .required(t('form-validate-input04-02')),
         }),
-        onClick: values=>{
-            console.log('clickeddd')
-        },
         onSubmit: values => {
             alert(JSON.stringify(values, null, 2));  
         },
@@ -74,13 +74,15 @@ const Form = () => {
     <form className="form-container" onSubmit={formik.handleSubmit}>
        {
            globalError &&
-           (<h4 className="global-error">* All fields are required to be filled</h4>)
+           (<h4 className="global-error">
+                {t('form-validate-global')}
+           </h4>)
        }
        <h3 className="form-subsec">
-            Enter your car details
+           {t('form-subTitle01')}
        </h3>
        <div className="formControl">
-          <label>Car Make</label>
+          <label>{t('form-label01')}</label>
           <select
             type="text"
             name="car_make"
@@ -101,7 +103,7 @@ const Form = () => {
           )}
         </div>
         <div className="formControl">
-          <label>Email</label>
+          <label>{t('form-label02')}</label>
           <select
             type="text"
             name="car_model"
@@ -120,10 +122,10 @@ const Form = () => {
           )}
         </div>
         <h3 className="form-subsec">
-            Enter your Contact Info
+            {t('form-subTitle02')}
        </h3>
         <div className="formControl">
-          <label>Your Full Name</label>
+          <label>{t('form-label03')}</label>
           <input
             type="text"
             name="name"
@@ -137,7 +139,7 @@ const Form = () => {
           )}
         </div>
         <div className="formControl">
-          <label>Your Phone Number</label>
+          <label>{t('form-label04')}</label>
           <input
             type="text"
             name="phone"
@@ -155,7 +157,7 @@ const Form = () => {
         size="large" color="primary"
         className="form-btn"
         >
-            Send Your Inquiry
+            {t('form-btn')}
         <ChevronRightIcon fontSize="large"/>
         </Button>
         </form>

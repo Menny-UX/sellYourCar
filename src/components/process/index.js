@@ -3,45 +3,49 @@ import './style.css';
 
 import bidding from '../../assets/images/bidding.svg'
 
+import { useTranslation } from 'react-i18next'
+
 const Process = () => {
+    const { t, i18n } = useTranslation();
+
     return ( 
     <section className="process-section x-align">
         <div className="process-desc">
             <h2 className="section-title">
-                How it works?
+                {t('Process-title')}
             </h2>
             <h4 className="section-subTitle">
-                Sell Your Car in Three Simple Steps
+                {t('Process-subTitle')}
             </h4>
             <div className="process-list-container">
            
                 <div className="process-item">
                     <div className="process-text">
                         <div className="process-item-brief">
-                            Submit Your Car
+                            {t('Process-item01-brief')}
                         </div>
                         <div className="process-item-desc">
-                            Enter your car details for inspection on Emirates Auction.
+                            {t('Process-item01-desc')}
                         </div>
                     </div>
                 </div>
                 <div className="process-item">
                     <div className="process-text">
                         <div className="process-item-brief">
-                            Receive Valuation and Offer
+                            {t('Process-item02-brief')}
                         </div>
                         <div className="process-item-desc">
-                            We will check your car and provide you with approved purchase price.
+                            {t('Process-item02-desc')}
                         </div>
                     </div>
                 </div>
                 <div className="process-item">
                     <div className="process-text">
                         <div className="process-item-brief">
-                            Get Your Payment
+                            {t('Process-item03-brief')}
                         </div>
                         <div className="process-item-desc">
-                            After a price is agreed for your car, we will exchange cash on a day that suits you.
+                            {t('Process-item03-desc')}
                         </div>
                     </div>
                 </div>
@@ -51,10 +55,10 @@ const Process = () => {
             <img src={bidding} alt="bidding" 
             className="bidding-icon"/>
             <h2 className="bidding-title">
-                Your car will be sold by bidding
+                {t('bidding-title')}
             </h2>
             <h3 className="bidding-subTitle">
-                You set the starting price it will be sold for the highest bidder
+                {t('bidding-subTitle')}
             </h3>
         </div>
     </section> );
